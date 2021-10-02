@@ -1,0 +1,10 @@
+<p>movie-list works!</p>
+
+<!-- <h2>New Movie: {{newMovie.releaseDate}}</h2> -->
+
+<h3>{{showFullMovie(movieReceivedFromMovieCom)}}</h3>
+
+<h2 [innerText]="titleReceivedFromApp"></h2>
+
+<app-movie (movieSendToMovieList)="onMovieSend($event)" [titleFromAppComp]="titleToBePassedToMovieComponent"></app-movie>
+
